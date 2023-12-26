@@ -38,6 +38,7 @@ const AuthGuard = (props: AuthGuardProps) => {
     [router.route]
   )
 
+  // check
   if (auth.loading || auth.user === null) {
     return fallback
   }
