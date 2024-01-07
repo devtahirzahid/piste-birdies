@@ -29,6 +29,7 @@ const defineRulesFor = (user: UserDataType, subject: string) => {
   const { role, verified } = user
   const { can, rules } = new AbilityBuilder(AppAbility)
 
+  debugger
   if (role === 'sender') {
     can(['read'], senderPages)
     can(['do'], senderAbilities)
@@ -51,6 +52,7 @@ export const buildAbilityFor = (
   user: UserDataType | null,
   subject: string
 ): AppAbility => {
+  debugger
   if (!user) return
 
   return new AppAbility(defineRulesFor(user, subject), {
