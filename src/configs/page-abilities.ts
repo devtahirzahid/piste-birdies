@@ -1,4 +1,5 @@
 export const senderPages = [
+  'home-page',
   'sender-only-page',
   'common-page',
   'chat-page',

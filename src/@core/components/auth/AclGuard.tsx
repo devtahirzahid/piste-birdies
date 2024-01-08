@@ -38,7 +38,6 @@ const AclGuard = (props: AclGuardProps) => {
   const router = useRouter()
 
   // If guestGuard is true and user is not logged in or its an error page, render the page without checking access
-  debugger
   if (
     guestGuard ||
     router.route === '/404' ||
@@ -65,6 +64,7 @@ const AclGuard = (props: AclGuardProps) => {
   // Render Not Authorized component if the current user has limited access
   return (
     <BlankLayout>
+      <>gfgf</>
       <NotAuthorized />
     </BlankLayout>
   )
